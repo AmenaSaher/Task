@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@1,7..72,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img class="logo" src="./images/Logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Wedding Cards</a></li>
+                    <li><a href="#">Birthday Cards</a></li>
+                    <li><a href="#">Feeling Cards</a></li>
+                    <li><a href="#">Anniversary Cards</a></li>
+                    <li><a href="#">Login | Signup</a></li>
+                </ul>
+                <img class="close" src="./images/menu.png" >    
+            </nav>
+                <img class="menu" src="./images/menu.png" >
+        </header>
+        <section class="first-sect">
+            <h2>Digital Card Details</h2>
+            <!-- <img class="backg"src="./images/Background.jpg"> -->
+        </section>
+        <section class="sec-sect">
+            <div class="sect-whole">
+                
+                <div class="images carousel" data-flickity>
+                    <img class="image1 carousel-cell" src="./images/Page1.jpg" alt="image 1">
+                    <img class="image2 carousel-cell" src="./images/Page2.jpg" alt="image 2">
+                    <img class="image3 carousel-cell" src="./images/Page3.jpg" alt="image 3">
+                </div>
+                <div class="sect2">
+                    <button class="btn">Try this Card</button>
+                    <div class="sect-mid">
+                    <div class="sect-mid1">
+                        <h3 class="price">$499</h3>
+                        <h4 class="crossed">$2000</h4>
+                    </div>
+                        <h3 class="disc">75% Off</h3>
+                    </div>
+                    <h2>Card Title</h2>
+                    <p>Donec eu ornare mi. Sed finibus
+                        condimentum mauris, ut dictum
+                        eros maximus vitae. Nullam
+                        condimentum tortor ac elit
+                    </p>
+                
+                </div>
+        </div>
+        </section>
+        <section class="features">
+            <h3 class="features-text">Features</h3>
+            <div class="features1">
+                <div class="img1">
+                <img src="./images/icon1.png" alt="icon 1">
+                <h3>Create your card in just 5 mins</h3>
+                </div>
+                <div class="img2">
+                <img src="./images/icon2.png" alt="icon 2">
+                <h3>Customize the Text with "Edit this Page" Option</h3>
+                </div>
+                <div class="img3">
+                <img src="./images/icon3.png" alt="icon 3">  
+                <h3>Editing is available after purchase also</h3>  
+            </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', ()=> {
+            nav.classList.add('nav-expand')
+        })
+
+        close.addEventListener('click',() => {
+            nav.classList.remove('nav-expand')
+        })
+    </script>
+</body>
+</html>
